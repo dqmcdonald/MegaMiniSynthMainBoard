@@ -1,0 +1,232 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_shieldsNCL
+LIBS:DQM
+LIBS:MegaMiniSynthMainBoard-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "MegaMiniSynth Main Board"
+Date "09/09/2014"
+Rev "v1.0"
+Comp "Quentin McDonald"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_MEGA_SHIELD SHIELD1
+U 1 1 540E7240
+P 5800 4000
+F 0 "SHIELD1" H 5400 6500 60  0000 C CNN
+F 1 "ARDUINO_MEGA_SHIELD" H 5700 1300 60  0000 C CNN
+F 2 "" H 5800 4000 60  0000 C CNN
+F 3 "" H 5800 4000 60  0000 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 540E72C5
+P 4600 2300
+F 0 "#FLG01" H 4600 2395 30  0001 C CNN
+F 1 "PWR_FLAG" H 4600 2480 30  0000 C CNN
+F 2 "" H 4600 2300 60  0000 C CNN
+F 3 "" H 4600 2300 60  0000 C CNN
+	1    4600 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 2450
+NoConn ~ 4800 2250
+NoConn ~ 4800 2150
+NoConn ~ 4800 2050
+$Sheet
+S 8800 3650 1450 550 
+U 540ED592
+F0 "MIDI Input and Thru" 59
+F1 "midi.sch" 59
+$EndSheet
+$Sheet
+S 1600 2300 1450 650 
+U 540FA12C
+F0 "Power Regulation" 59
+F1 "power_reg.sch" 59
+F2 "VIN" I R 3050 2750 60 
+F3 "GND" I R 3050 2550 60 
+$EndSheet
+Wire Wire Line
+	4800 2350 4500 2350
+Wire Wire Line
+	4500 2350 4500 2250
+Wire Wire Line
+	4500 2250 3400 2250
+Wire Wire Line
+	3400 2250 3400 2550
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 540E72D9
+P 4650 2600
+F 0 "#FLG02" H 4650 2695 30  0001 C CNN
+F 1 "PWR_FLAG" H 4650 2780 30  0000 C CNN
+F 2 "" H 4650 2600 60  0000 C CNN
+F 3 "" H 4650 2600 60  0000 C CNN
+	1    4650 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2550 4500 2550
+Wire Wire Line
+	4500 2550 4500 2750
+Connection ~ 4500 2750
+Wire Wire Line
+	4500 2750 3050 2750
+Connection ~ 4400 2750
+Connection ~ 4400 2250
+Wire Wire Line
+	4600 2300 4600 2350
+Connection ~ 4600 2350
+Wire Wire Line
+	4650 2600 4650 2550
+Connection ~ 4650 2550
+NoConn ~ 4800 2750
+NoConn ~ 4800 2850
+NoConn ~ 4800 2950
+NoConn ~ 4800 3050
+NoConn ~ 4800 3150
+NoConn ~ 4800 3250
+NoConn ~ 4800 3350
+NoConn ~ 4800 3650
+NoConn ~ 4800 3750
+NoConn ~ 4800 3450
+NoConn ~ 4800 3850
+NoConn ~ 4800 3950
+NoConn ~ 4800 4050
+NoConn ~ 4800 4150
+NoConn ~ 4800 4250
+NoConn ~ 4800 4350
+NoConn ~ 4800 4600
+NoConn ~ 4800 4700
+NoConn ~ 4800 4850
+Entry Wire Line
+	4800 4950 4900 5050
+Entry Wire Line
+	4800 4950 4900 5050
+Entry Wire Line
+	4800 5050 4900 5150
+NoConn ~ 4800 4950
+NoConn ~ 4800 5050
+NoConn ~ 4800 5150
+NoConn ~ 4800 5300
+NoConn ~ 4800 5400
+NoConn ~ 4800 5500
+NoConn ~ 4800 5600
+NoConn ~ 4800 5700
+NoConn ~ 4800 5800
+NoConn ~ 4800 5900
+NoConn ~ 4800 6000
+NoConn ~ 4800 6150
+NoConn ~ 4800 6250
+NoConn ~ 4800 6350
+NoConn ~ 4800 6450
+NoConn ~ 6700 6200
+NoConn ~ 6700 6100
+NoConn ~ 6700 6000
+NoConn ~ 6700 5900
+NoConn ~ 6700 5800
+NoConn ~ 6700 5700
+NoConn ~ 6700 5600
+NoConn ~ 6700 5500
+NoConn ~ 6700 5350
+NoConn ~ 6700 5250
+NoConn ~ 6700 5150
+NoConn ~ 6700 5050
+NoConn ~ 6700 4950
+NoConn ~ 6700 4850
+NoConn ~ 6700 4750
+NoConn ~ 6700 4650
+NoConn ~ 6700 4500
+NoConn ~ 6700 4400
+NoConn ~ 6700 4150
+NoConn ~ 6700 4050
+NoConn ~ 6700 3950
+NoConn ~ 6700 3850
+NoConn ~ 6700 3750
+NoConn ~ 6700 3650
+NoConn ~ 6700 3550
+NoConn ~ 6700 3450
+NoConn ~ 6700 3250
+NoConn ~ 6700 3150
+NoConn ~ 6700 3050
+NoConn ~ 6700 2950
+NoConn ~ 6700 2850
+NoConn ~ 6700 2750
+NoConn ~ 6700 2650
+NoConn ~ 6700 2550
+NoConn ~ 6700 2350
+NoConn ~ 6700 2250
+NoConn ~ 6700 2150
+NoConn ~ 6700 2050
+NoConn ~ 6700 1950
+NoConn ~ 6700 1850
+NoConn ~ 6700 1750
+NoConn ~ 6700 1650
+$Comp
+L GND #PWR03
+U 1 1 540FB4F7
+P 4400 2100
+F 0 "#PWR03" H 4400 2100 30  0001 C CNN
+F 1 "GND" H 4400 2030 30  0001 C CNN
+F 2 "" H 4400 2100 60  0000 C CNN
+F 3 "" H 4400 2100 60  0000 C CNN
+	1    4400 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L +9V #PWR04
+U 1 1 540FB50B
+P 4400 2900
+F 0 "#PWR04" H 4400 2870 20  0001 C CNN
+F 1 "+9V" H 4400 3010 30  0000 C CNN
+F 2 "" H 4400 2900 60  0000 C CNN
+F 3 "" H 4400 2900 60  0000 C CNN
+	1    4400 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 2250 4400 2100
+Wire Wire Line
+	4400 2750 4400 2900
+Wire Wire Line
+	3400 2550 3050 2550
+$EndSCHEMATC
